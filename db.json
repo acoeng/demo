@@ -1,14 +1,14 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {"id":"dashboard","name":"Dashboard","to":"dashboard","icon":"home"},
+  {"id":"masterdata","name":"Master Data","icon":"address-book",
+   "_children": [
+     {"id":"m_users","name":"Data User","to":"users"},
+     {"id":"m_karyawan","name":"Data Karyawan","to":"karyawan"}
+   ]
+  },
+  {"id":"laporan","name":"Laporan","icon":"chart-bar",
+   "_children": [
+     {"id":"lap_user","name":"Users","to":"lap_users"},
+   ]
   }
-}
+]
